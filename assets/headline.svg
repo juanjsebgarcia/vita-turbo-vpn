@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="bg" cx="0.32" cy="0.05" r="1.15">
+      <stop offset="0" stop-color="#dc1c2c"/><stop offset="0.38" stop-color="#8a0b17"/>
+      <stop offset="0.75" stop-color="#3a040a"/><stop offset="1" stop-color="#140103"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0.6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.45"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff5a5a" stop-opacity="0.55"/><stop offset="0.55" stop-color="#ff3b3b" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#ff3b3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffb8b8" stop-opacity="0"/><stop offset="0.3" stop-color="#ffe8e8" stop-opacity="0.9"/>
+      <stop offset="0.7" stop-color="#ff7272" stop-opacity="0.7"/><stop offset="1" stop-color="#ffb8b8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="tube" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.15"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.12"/><stop offset="1" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-40%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="0 0 0 0 1.0  0 0 0 0 0.3  0 0 0 0 0.3  0 0 0 0.55 0" result="c"/>
+      <feMerge><feMergeNode in="c"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-10%" y="-50%" width="120%" height="200%"><feGaussianBlur stdDeviation="2.2"/></filter>
+    <filter id="bokeh" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <symbol id="lock" viewBox="0 0 40 50">
+      <path d="M11 23 V15 a9 9 0 0 1 18 0 V23" fill="none" stroke="#ffffff" stroke-width="5.2" stroke-linecap="round"/>
+      <rect x="2" y="21" width="36" height="28" rx="6.5" fill="#ffffff"/>
+      <circle cx="20" cy="32.5" r="4.2" fill="#8a0b17"/><rect x="18.1" y="33" width="3.8" height="9" rx="1.6" fill="#8a0b17"/>
+    </symbol>
+    <style>
+      .t    { font-family: -apple-system, "SF Pro Display", "Segoe UI", Helvetica, Arial, sans-serif; }
+      .h1   { font-size: 50px; font-weight: 800; fill: #ffffff; letter-spacing: -0.5px; }
+      .h1l  { font-size: 50px; font-weight: 300; fill: #ffd9d9; letter-spacing: -0.5px; }
+      .h2   { font-size: 21px; font-weight: 400; fill: #ffc6c6; }
+      .badge{ font-size: 17px; font-weight: 700; fill: #ffffff; letter-spacing: 0.4px; }
+      .foot { font-size: 13px; font-weight: 400; fill: #ffadad; }
+      .lbl  { font-size: 23px; font-weight: 700; fill: #ffffff; }
+      .sub  { font-size: 17px; font-weight: 400; fill: #ffb8b8; }
+      .chip { font-size: 18px; font-weight: 600; fill: #ffffff; }
+      .cap  { font-size: 15px; font-weight: 700; fill: #ffd0d0; letter-spacing: 1.6px; }
+      .big  { font-size: 46px; font-weight: 800; fill: #ffffff; letter-spacing: -0.8px; }
+      .bigl { font-size: 46px; font-weight: 300; fill: #ffd9d9; letter-spacing: -0.8px; }
+      .col  { font-size: 26px; font-weight: 800; fill: #ffffff; }
+      .st   { font-size: 14px; font-weight: 600; fill: #ffd6d6; letter-spacing: 0.6px; }
+    </style>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M -40 470 C 220 380, 420 560, 700 470 S 1060 380, 1260 450" stroke="url(#ribbon)" stroke-width="2.4" opacity="0.55" filter="url(#soft)"/>
+    <path d="M -40 500 C 260 420, 460 590, 740 495 S 1080 410, 1260 485" stroke="url(#ribbon)" stroke-width="1.4" opacity="0.45"/>
+    <path d="M -40 535 C 240 470, 480 610, 760 525 S 1100 455, 1260 520" stroke="url(#ribbon)" stroke-width="3.2" opacity="0.25" filter="url(#soft)"/>
+    <path d="M -40 420 C 300 340, 500 500, 820 420 S 1120 350, 1260 400" stroke="url(#ribbon)" stroke-width="1" opacity="0.35"/>
+    <path d="M -40 120 C 260 60, 520 190, 820 110 S 1100 40, 1260 90" stroke="url(#ribbon)" stroke-width="1" opacity="0.18"/>
+  </g>
+  <g fill="#ffc4c4" filter="url(#bokeh)">
+    <circle cx="1080" cy="150" r="7" opacity="0.30"/><circle cx="1010" cy="128" r="4" opacity="0.35"/>
+    <circle cx="880" cy="40" r="5" opacity="0.25"/><circle cx="160" cy="600" r="6" opacity="0.28"/>
+    <circle cx="420" cy="610" r="4" opacity="0.30"/><circle cx="690" cy="598" r="8" opacity="0.18"/>
+    <circle cx="1140" cy="602" r="5" opacity="0.30"/><circle cx="560" cy="30" r="3" opacity="0.30"/>
+  </g>
+  <rect width="1200" height="630" fill="url(#vignette)"/>
+  <text class="t" x="60" y="90"><tspan class="h1">Vita Turbo VPN</tspan><tspan class="h1l"> for PS Vita</tspan></text>
+  <text class="t h2" x="60" y="128">A taiHEN plugin and app: a VPN client for every app and game on the Vita.</text>
+  <rect x="918" y="56" width="222" height="42" rx="21" fill="#ffffff" fill-opacity="0.10" stroke="#ffffff" stroke-opacity="0.45"/>
+  <text class="t badge" x="1029" y="83" text-anchor="middle">FIRMWARE 3.60–3.74</text>
+  <circle cx="250" cy="372" r="190" fill="url(#halo)"/>
+  <g fill="none" stroke="#ffffff"><circle cx="250" cy="352" r="118" stroke-opacity="0.16" stroke-width="1.2"/><circle cx="250" cy="352" r="88" stroke-opacity="0.28" stroke-width="1.4"/><circle cx="250" cy="352" r="150" stroke-opacity="0.08" stroke-width="1"/></g>
+  <g filter="url(#glow)"><use href="#lock" x="200" y="290" width="100" height="125"/></g>
+  <rect x="176" y="492" width="148" height="34" rx="17" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.4"/>
+  <circle cx="198" cy="509" r="5" fill="#7dff9a"/>
+  <text class="t st" x="260" y="514" text-anchor="middle">PROTECTED</text>
+  <circle cx="548" cy="200" r="27" fill="#ffffff" fill-opacity="0.09" stroke="#ffffff" stroke-opacity="0.3"/>
+  <g transform="translate(530 182) scale(1.0)"><circle cx="18" cy="18" r="14" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="18" cy="18" rx="6" ry="14" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M 4 18 H 32 M 7 10 H 29 M 7 26 H 29" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text class="t lbl" x="596" y="195">Every app and game</text>
+  <text class="t sub" x="596" y="221">all traffic, system services included, through your tunnel</text>
+  <circle cx="548" cy="276" r="27" fill="#ffffff" fill-opacity="0.09" stroke="#ffffff" stroke-opacity="0.3"/>
+  <g transform="translate(530 258) scale(1.0)"><path d="M 18 3 L 31 8 V 17 C 31 26 25 31 18 34 C 11 31 5 26 5 17 V 8 Z" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M 12 18 L 16.5 22.5 L 24.5 13.5" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text class="t lbl" x="596" y="271">Lockdown Mode</text>
+  <text class="t sub" x="596" y="297">with the VPN off, nothing leaves the Vita</text>
+  <circle cx="548" cy="352" r="27" fill="#ffffff" fill-opacity="0.09" stroke="#ffffff" stroke-opacity="0.3"/>
+  <g transform="translate(530 334) scale(1.0)"><path d="M 10 11 H 26 C 31 11 34 15 34 21 C 34 27 31 30 28 30 C 25 30 24 26 21 26 H 15 C 12 26 11 30 8 30 C 5 30 2 27 2 21 C 2 15 5 11 10 11 Z" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M 10 16 V 22 M 7 19 H 13" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="25" cy="17" r="1.6" fill="#ffffff"/><circle cx="28" cy="21" r="1.6" fill="#ffffff"/></g>
+  <text class="t lbl" x="596" y="347">Perfect for remote Moonlight play</text>
+  <text class="t sub" x="596" y="373">stream your PC’s games from anywhere, ~2 ms added</text>
+  <circle cx="548" cy="428" r="27" fill="#ffffff" fill-opacity="0.09" stroke="#ffffff" stroke-opacity="0.3"/>
+  <g transform="translate(530 410) scale(1.0)"><rect x="4" y="4" width="11" height="11" rx="2" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="21" y="4" width="11" height="11" rx="2" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="21" width="11" height="11" rx="2" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M 21 21 H 25 V 25 M 32 21 V 25 M 25 32 H 32 M 21 28 V 32" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text class="t lbl" x="596" y="423">Import by QR code</text>
+  <text class="t sub" x="596" y="449">or copy a .conf profile to the memory card</text>
+  <circle cx="548" cy="504" r="27" fill="#ffffff" fill-opacity="0.09" stroke="#ffffff" stroke-opacity="0.3"/>
+  <g transform="translate(530 486) scale(1.0)"><path d="M 29 13 A 12 12 0 1 0 31 21" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M 30 5 V 13 H 22" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text class="t lbl" x="596" y="499">Reconnects by itself</text>
+  <text class="t sub" x="596" y="525">after sleep or a Wi-Fi drop, no leaks meanwhile</text>
+  <text class="t foot" x="60" y="604">A VPN client, not a VPN service: bring your own profile, from your own server or router, or from a VPN provider you use.</text>
+</svg>

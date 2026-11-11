@@ -1,0 +1,11 @@
+quirc, QR-code recognition library (ISC licence, see LICENSE)
+
+Upstream:  https://github.com/dlbeer/quirc
+Commit:    f2e4271ae43a15d9263704e07bc86cba5697d74d (2026-10-28,
+           "Merge pull request #158 from 94xhn/fix/resize-int-overflow")
+Copied:    lib/ only (decode.c identify.c quirc.c version_db.c quirc.h
+           quirc_internal.h), unmodified. Demos, tests and the Makefile
+           are not included.
+
+Build: compile the four .c files with -Ilib. No configuration needed;
+QUIRC_FLOAT_TYPE and QUIRC_MAX_REGIONS keep their defaults.

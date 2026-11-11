@@ -1,0 +1,29 @@
+vpnturbo_kernel:
+  attributes: 0
+  version:
+    major: 0
+    minor: 1
+  main:
+    start: module_start
+    stop: module_stop
+  libraries:
+    SceVpnTurbo:
+      syscall: true
+      functions:
+        - vtSetProfile
+        - vtConnect
+        - vtDisconnect
+        - vtMigrate
+        - vtSetOptions
+        - vtPause
+        - vtResume
+        - vtGetStatus
+        - vtGetRouteFor
+        - vtTransportRx
+        - vtTransportTx
+        - vtSetEndpoint
+        - vtGetDns
+        - vtSetOverlay
+        - vtGetOverlay
+        - vtSetExitIp
+        - vtNetReady

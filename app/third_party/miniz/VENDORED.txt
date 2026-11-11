@@ -1,0 +1,8 @@
+miniz 3.0.2 (MIT, see LICENSE), the release amalgamation miniz.c and miniz.h,
+unmodified, from
+https://github.com/richgel999/miniz/releases/download/3.0.2/miniz-3.0.2.zip
+(SHA-256 of the zip: ada38db0b703a56d3dd6d57bf84a9c5d664921d870d8fea4db153979fb5332c5).
+
+Used to read profile bundles (.zip) in memory: built with MINIZ_NO_STDIO,
+MINIZ_NO_TIME, MINIZ_NO_DEFLATE_APIS (which also drops archive writing) and
+MINIZ_NO_ZLIB_COMPATIBLE_NAMES, about 27 KB of code.

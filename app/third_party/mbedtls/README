@@ -1,0 +1,2 @@
+mbedTLS 3.6 (LTS) is linked from the pinned VitaSDK image; this is its
+licence (Apache-2.0), shipped in the VPK as licenses/mbedtls-LICENSE.txt.

@@ -1,0 +1,6 @@
+/*
+ * engb.def - English, United Kingdom (system language 18). The ids are
+ * strings_en.def's; an id left out shows the English. The English text is
+ * already written in British spelling with no US-only words, so nothing
+ * differs yet. Notes for reviewers: ../../TRANSLATIONS.md.
+ */

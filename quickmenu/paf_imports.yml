@@ -1,0 +1,12 @@
+# Two of SceShell's own PAF framework calls (libpaf, library ScePafCommon),
+# for vita-libs-gen-2. Only the quick-menu module links them, and only when
+# built with VTW_QM_LIVE (see paf_task.h). NIDs read from QuickMenuReborn
+# 2.5's import table and checked exported by libpaf on 3.60-3.74.
+modules:
+  ScePaf:
+    libraries:
+      ScePafCommon:
+        nid: 0x3C1965CD
+        functions:
+          scePafAddMainThreadTask: 0x6735B503
+          scePafRemoveMainThreadTask: 0x4A8115D5
